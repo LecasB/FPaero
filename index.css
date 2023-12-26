@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
+/*Configurações Globais*/
+*{
+    font-family: 'Manrope', sans-serif;
+}
+
+html, body {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto auto;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+hr{
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.formestilo{
+    display: flex;
+    flex-direction: row;
+}
+
+.formcont{
+    margin-right: 10px;
+}
+
+.quemsomos p,.quemsomosrev p{
+    line-height: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*Início das configurações da header*/
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.brand {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 0 0 0 5%;
+}
+
+.logo{
+    margin-top: 6px;
+    height: 70px;
+    width: 100px;
+}
+/*Início das configurações da Navigation*/
+.menu {
+    width: 60%;
+    height: 100%;
+    float: right;
+    margin-top: 16px;
+}
+.menu ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.menu ul a {
+    width: 20%;
+    height: inherit;
+    color: #222;
+    display: inline-block;
+}
+.menu ul a:hover {
+    font-weight: bold;
+    color: #000000;
+    text-decoration:underline;
+}
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+
+.conteudo{
+    margin-top: 30px;
+   display: flex;
+   flex-direction: row;
+   max-width: 100%;
+   flex-wrap: wrap;
+}
+
+.galima {
+    min-height: 130px;
+    max-width: 160px;
+    width: 100%;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+    .quemsomosrev{
+        display: flex;
+        flex-direction: row;
+        background-color:#b5c5e366;
+        border-radius: 10px;
+        padding-bottom: 10px;
+        
+    }
+
+    .quemsomos{
+        display: flex;
+        flex-direction: row-reverse;
+        background-color:#b5c5e366;
+        border-radius: 10px;
+        padding-bottom: 10px;
+        
+        
+    }
+
+h1,h2,.regulamento2{
+    margin-left: 20px;
+}
+
+
+.back-to-top {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #7594cf;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+    z-index:100;
+}
+
+.back-to-top span {
+	color: #fff;
+	font-size: 3rem;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+	background-color: #7594cf;
+}
+.back-to-top:hover span {
+	transform: translateY(-4px);
+}
+
+.footer{
+    display: flex;
+    position:sticky;
+    bottom: 0;
+    height: fit-content;
+    width: 100%;
+    max-width: 1200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 500px;
+    height: 600px;
+    max-width: 100%;
+
+}
+
+
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.butaoenviar{
+    border-radius: 20px;
+    color: #000000;
+    background-color: #fff;
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: rgb(76, 119, 175);
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #454ba0;
+}
+
+.equipa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+
+.bgcont{
+    background-image:url(formbg.jpg);
+    background-size: 100%;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    text-align: center;
+    
+    
+}
+
+.fotoalbum{
+    width: 400px; height: 200px; border-radius: 10px; margin:20px;
+    border: 1px solid #000000;
+}
+
+
+
+/*Início das configurações da Navigation com dispositivos < 768px*/
+@media screen and (min-device-width: 481px) and (max-device-width: 992px) { 
+
+    body{
+width: 100%;
+    }
+    .formestilo{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu {
+        width: 100%;
+        height: auto;
+        z-index: 1;
+
+        
+    }
+
+    .mapa{
+        max-width: 100%;
+    width: 100%;
+    DISPLAY: FLEX;
+    JUSTIFY-CONTENT: center;
+    FLEX-DIRECTION: COLUMN;
+    ALIGN-ITEMS: CENTER;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+    	overflow: hidden;
+    	-webkit-transition: max-height 0.3s;
+    	-moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+    	transition: max-height 0.3s;
+        /*Para fazer com que o menu saia da esquerda, você deve trocar max-height por max-width*/
+        /*Para fazer com que o menu saia da direita, você deve trocar max-height por max-width e setar float: right*/
+    }
+    .menu ul a {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #ffffff;
+        padding: 10px 0px 10px 5%;
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 0;
+        line-height: 60px;
+
+        
+    }
+   
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+        /*Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width*/
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+
+    .logo{
+        margin-top: 2px;
+    }
+
+    .conteudo{
+        display:inline-flex;
+        justify-content: space-between;
+        flex-wrap: wrap; /* Allow content to wrap to the next line if it exceeds the width */
+        max-width: 100%;
+    }
+        
+        hr{
+            display: none;
+        }
+        
+     }
+     
+     #parceiros{
+        border: 1px solid black;
+        background: #000000;
+        border-radius:10px;
+        color: #fff;
+        padding:10px;
+        margin-left:20px;
+     }
+
+     .galima{
+         height: 120px;
+         width: 150px;
+         transition: padding 1s;
+     }
+
+     .galima:hover{
+        padding: 5px;
+     }
+
+     .quemsomos{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        min-width: 10px;
+        margin: auto auto;
+    }
+
+    .quemsomosrev{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 90%;
+        min-width: 10px;
+        margin: 20px;
+    }
+
+    .fotoalbum{
+        height: 160px;
+        width: 200px;
+    }
+
+    
+
+    .regulamento{
+        width: 700px;
+    }
+
+    h1,h2,.regulamento2{
+        margin-left: 20px;
+    }
+
+    .regulamentofinal{
+        margin-left: 20px;
+    }
+
+
+
+@media screen and (max-width: 480px) {
+    .back-to-top{
+        display: none;
+    }
+
+    .formestilo{
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu {
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+    	overflow: hidden;
+    	-webkit-transition: max-height 0.3s;
+    	-moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+    	transition: max-height 0.3s;
+        /*Para fazer com que o menu saia da esquerda, você deve trocar max-height por max-width*/
+        /*Para fazer com que o menu saia da direita, você deve trocar max-height por max-width e setar float: right*/
+    }
+    .menu ul a {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #ffffff;
+        padding: 10px 0px 10px 5%;
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 0;
+        line-height: 60px;
+
+        
+    }
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+        /*Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width*/
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+
+    .logo{
+        margin-top: 2px;
+    }
+
+    .conteudo{
+        
+        display:none;
+        justify-content: center;
+        flex-wrap: wrap; /* Allow content to wrap to the next line if it exceeds the width */
+        max-width: 500px;
+        }
+
+     
+     .galima{
+         height: 120px;
+         width: 120px;
+     }
+
+     .quemsomos{
+        margin: auto auto;
+        display: block;
+        
+        max-width:90%;
+        min-width: 10px;
+    }
+
+    .quemsomosrev{
+        margin: auto auto;
+        display: block;
+        
+        max-width:90%;
+        min-width: 10px;
+    }
+
+    .fotoalbum{
+        height: 170px;
+        width: 99%;
+        margin:0px;
+    }
+
+    form {
+        margin-top: 40px;
+        max-width: 100%;
+    }
+
+    iframe{
+        width: 350px;
+        max-width: 100%;
+    }
+
+    textarea{
+        width: 280px;
+    }
+
+    .regulamento{
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        
+    }
+
+    .regulamento2{
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        max-width: 300px;
+    }
+    #margemfundo{
+        margin-bottom: 10px;
+    }
+    h1,h2,.regulamento2{
+        margin-left: 20px;
+    }
+
+    .regulamentofinal{
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+
+    
+
+    hr{
+        display: none;
+    }
+
+    .equipa{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 500PX;
+    }
+
+    figure{
+        display: inline-grid;
+    }
+
+    figure a{
+        justify-self: center;
+    }
+
+    .formestilo{
+        width: 100%;
+        box-sizing: content-box;
+        margin: auto auto;
+    }
+    
+    .formcont{
+        box-sizing: content-box;
+        width: auto;
+        margin: 0px 10px 0px 10px;
+    }
+
+    form{
+        text-align: left;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 0px;
+        /* width: 500px; */
+        height: 600px;
+        /* max-width: 100%;*/
+    }
+
+    form{
+        width: 100%;
+        box-sizing: content-box;
+    }
+}
